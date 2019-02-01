@@ -1,4 +1,4 @@
-# Reverse a string
+# Reverse a String
 
 Reverse the provided string.
 
