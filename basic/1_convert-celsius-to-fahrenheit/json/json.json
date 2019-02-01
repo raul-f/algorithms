@@ -1,0 +1,3 @@
+{
+    "index.js": "function convertToF(celsius) {\n  let fahrenheit = (9/5)*celsius + 32;\n  return fahrenheit;\n}\n\nconsole.log(convertToF(100));"
+}

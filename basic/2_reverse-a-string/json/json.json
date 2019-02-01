@@ -1,0 +1,3 @@
+{
+    "index.js": "function reverseString(str) {\n  let firstStep = [];\n  for (let i = str.length - 1; i >= 0; i--) {\n    firstStep.push(str[i]);\n  }\n  //console.log(JSON.stringify(firstStep));\n  let secondStep = \"\";\n  for (let j = 0; j < firstStep.length; j++) {\n    secondStep += firstStep[j];\n  }\n  //console.log(secondStep);\n  str = secondStep;\n  return str;\n}\n\nconsole.log(reverseString(\"hello\"));"
+}

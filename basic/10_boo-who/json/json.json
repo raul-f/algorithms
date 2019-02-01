@@ -1,0 +1,1 @@
+{"index.js":"\n/* \n\nCheck if a value is classified as a boolean primitive. Return true or false.\n\nBoolean primitives are true and false.\n\n*/\n\nfunction booWho(bool) {\n\n  if (typeof bool === \"boolean\") {\n    return true;\n  }\n  return false;\n}\n\nconsole.log(booWho(0));"}

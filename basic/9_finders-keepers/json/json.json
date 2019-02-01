@@ -1,0 +1,3 @@
+{
+    "index.js": "function findElement(arr, func) {\n\n  let num = 0;\n\n  for (let i = 0; i < arr.length; i++) {\n\n    if (func(arr[i]) === true) {\n      num = arr[i];\n      return num;\n    }\n\n  }\n\n  return undefined;\n}\n\nfindElement([1, 2, 3, 4], num => num % 2 === 0);\n\nfunction truthTest (num) { // equals the arrow notation function ((num) => num % 2 === 0)\n  return num % 2 === 0;\n}\n\n//console.log(truthTest(9))"
+}
