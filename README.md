@@ -17,5 +17,6 @@ This is a collection of algorithms that I developed, the core of which were done
 ## Tasks:
 
 -   [x] Finish formating of README and app files for intermediary challenges
+-   [x] Add projects done for [JavaScript Algorithms and Data Structures Certification](https://www.freecodecamp.org/certification/raul.f/javascript-algorithms-and-data-structures)
 -   [ ] Implement true testing
 -   [ ] Update the algorithms so they comply with functional programming principles
