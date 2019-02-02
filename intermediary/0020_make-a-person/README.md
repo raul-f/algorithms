@@ -23,6 +23,8 @@ These methods must be the only available means of interacting with the object.
 
 ### Cases:
 
+#### #1:
+
 ```
 const Person = require("./app.js").Person
 let bob = new Person("Bob Ross")
