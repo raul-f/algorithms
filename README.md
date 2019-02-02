@@ -14,8 +14,8 @@ This is a collection of algorithms that I developed, the core of which were done
 -   Node.js
 -   Mocha and Chai
 
-## To do:
+## Tasks:
 
--   [ ] Finish formating of README and app files for intermediary challenges
--   [ ] Update the algorithms so they comply with functional programming principles
+-   [x] Finish formating of README and app files for intermediary challenges
 -   [ ] Implement true testing
+-   [ ] Update the algorithms so they comply with functional programming principles
