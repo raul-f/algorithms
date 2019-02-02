@@ -8,7 +8,7 @@ Use the algorithm mentioned above to help convert the Celsius temperature to Fah
 
 Don't worry too much about the function and return statements as they will be covered in future challenges. For now, only use operators that you have already learned.
 
-## Examples:
+## Tests:
 
 -   `convertToF(0)` should return a number
 -   `convertToF(-30)` should return a value of `-22`

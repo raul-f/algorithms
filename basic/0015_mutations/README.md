@@ -8,7 +8,7 @@ The arguments `["hello", "hey"]` should return `false` because the string `"hell
 
 Lastly, `["Alien", "line"]`, should return `true` because all of the letters in `"line"` are present in `"Alien"`.
 
-## Example:
+## Tests:
 
 -   `mutation(["hello", "hey"])` should return `false`.
 -   `mutation(["hello", "Hello"])` should return `true`.

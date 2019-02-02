@@ -4,7 +4,7 @@ Return the length of the longest word in the provided sentence.
 
 Your response should be a number.
 
-## Example:
+## Tests:
 
 -   `findLongestWordLength("The quick brown fox jumped over the lazy dog")` should return a number.
 -   `findLongestWordLength("The quick brown fox jumped over the lazy dog")` should return `6`.
