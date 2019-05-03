@@ -9,6 +9,8 @@ def main() -> None:
     # Main code
     bst = BST(10)
     bst.insert(5)
+    bst.insert(15)
+    print(bst)
     # End of main code
     end: Decimal = Decimal(time.time())
     execution_time: Decimal = round((end - start) * 1000, 3)
@@ -18,24 +20,32 @@ def main() -> None:
 
 
 class BST(object):
-    def __init__(self, root: int) -> None:
-        self.root: int = root
+    def __init__(self, value: int, parent: 'BST' = None, position: int = 1) -> None:
+        self.value: int = value
+        self.position: int = position
+        self.parent: 'BST' = parent
+
+    def __str__(self):
+        if hasattr(self, 'right') and hasattr(self, 'left'):
+            return f'[{self.value}]\n[{self.left.__str__()}, {self.right.__str__()}]'
+        elif hasattr(self, 'right'):
+            return f'[{self.value}]\n[, {self.right.__str__()}]'
+        elif hasattr(self, 'left'):
+            return f'[{self.value}]\n[ {self.left.__str__()}, ]'
+        else:
+            return f'[{self.value}]'
 
     def insert(self, node: int):
-        if hasattr(self, 'root'):
-            if node > self.root:
-                if hasattr(self, 'right'):
-                    self.right.insert(node)
-                else:
-                    self.right = BST(node)
+        if node > self.value:
+            if hasattr(self, 'right'):
+                self.right.insert(node)
             else:
-                if hasattr(self, 'left'):
-                    self.left.insert(node)
-                else:
-                    self.left = BST(node)
-
+                self.right = BST(node, self, 2 * self.position + 1)
         else:
-            self.root = node
+            if hasattr(self, 'left'):
+                self.left.insert(node)
+            else:
+                self.left = BST(node, self, 2 * self.position)
 
 
 main()
