@@ -9,7 +9,12 @@ def main() -> None:
     # Main code
     bst = BST(10)
     bst.insert(5)
+    bst.insert(2)
+    bst.insert(1)
+    bst.insert(3)
     bst.insert(15)
+    bst.insert(12)
+    bst.insert(17)
     print(bst)
     # End of main code
     end: Decimal = Decimal(time.time())
@@ -27,13 +32,13 @@ class BST(object):
 
     def __str__(self):
         if hasattr(self, 'right') and hasattr(self, 'left'):
-            return f'[{self.value}]\n[{self.left.__str__()}, {self.right.__str__()}]'
+            return f'{self.value} ({self.left.__str__()}) ({self.right.__str__()})'
         elif hasattr(self, 'right'):
-            return f'[{self.value}]\n[, {self.right.__str__()}]'
+            return f'{self.value} () ({self.right.__str__()})'
         elif hasattr(self, 'left'):
-            return f'[{self.value}]\n[ {self.left.__str__()}, ]'
+            return f'{self.value} ({self.left.__str__()}) ()'
         else:
-            return f'[{self.value}]'
+            return f'{self.value}'
 
     def insert(self, node: int):
         if node > self.value:
